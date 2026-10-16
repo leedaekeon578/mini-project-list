@@ -25,7 +25,7 @@ def main():
     station = sys.argv[1]
     if station == "--all":
         for name, (first, second) in ARRIVALS.items():
-            print(f"{name}: {first}분 후, {second}분 후")
+            print(f"{name}: {first[0]}분 후, {second[0]}분 후")
         return
 
     if station not in ARRIVALS:
